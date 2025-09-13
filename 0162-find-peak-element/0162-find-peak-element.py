@@ -4,7 +4,7 @@ class Solution:
         while left < right:
             mid = (left + right) // 2
             if nums[mid] < nums[mid + 1 ]:
-                left = mid + 1
+                left = mid + 1   # move to the right
             else:
-                right = mid
-        return left
+                right = mid      # move to the left
+        return left              # here in this condition left and right become equal so we can return any variable when we find peak
